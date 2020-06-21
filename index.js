@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 
 // set up a rule that says requests to "/math" should be handled by the
 // handleMath function below
-app.get('/', (req, res) => res.send("Welcome to the root!"))
+app.get('/', (req, res) => res.send(form.html))
 app.get('/form', (req, res) => res.send(form.html))
 app.get('/math', handleMath);
 
